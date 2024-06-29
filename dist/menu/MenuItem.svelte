@@ -20,7 +20,7 @@ let {
                 'flex flex-wrap items-center gap-2',
                 'rounded-lg',
                 'cursor-pointer',
-                'font-bold',
+                'font-semibold',
                 'hover:bg-gray-300',
             )}
             onclick={() => open = !open}
@@ -47,7 +47,7 @@ let {
             'flex flex-wrap items-center gap-2',
             'rounded-lg',
             'no-underline',
-            'font-bold',
+            'font-semibold',
             'hover:bg-gray-300',
             (active) ? 'bg-gray-300' : ''
         )}
