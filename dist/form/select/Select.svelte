@@ -85,13 +85,15 @@ onMount(() => {
         />
         <Search class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size="18" />
     </div>
-    {#each items as item}
-        <DropdownItem 
-            label={item.label} 
-            onclick={(e) => {
-                e.preventDefault();
-                select(item);
-            }} 
-        />
-    {/each}
+    <div class="max-h-[300px] overflow-auto">
+        {#each items as item}
+            <DropdownItem 
+                label={item.label} 
+                onclick={(e) => {
+                    e.preventDefault();
+                    select(item);
+                }} 
+            />
+        {/each}
+    </div>
 </Dropdown>

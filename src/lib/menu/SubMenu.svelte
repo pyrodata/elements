@@ -2,9 +2,9 @@
     import type { MenuProps } from "./index.js";
 
     let {
-        children,
+        children
     }: MenuProps = $props();
 </script>
-<div class="flex flex-col gap-1 font-semibold">
+<div class="ms-6 [&>a]:font-normal [&>a]:before:content-['—']">
     {@render children()}
 </div>

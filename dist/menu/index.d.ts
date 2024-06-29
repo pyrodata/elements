@@ -4,11 +4,9 @@ import SubMenu from "./SubMenu.svelte";
 import MenuItem from "./MenuItem.svelte";
 import type { Snippet } from "svelte";
 import type { HTMLAnchorAttributes } from "svelte/elements";
-
 export type MenuProps = {
     children: Snippet;
-}
-
+};
 export type MenuItemProps = {
     icon?: typeof Icon;
     active?: boolean;
@@ -17,9 +15,4 @@ export type MenuItemProps = {
     label: string;
     children?: Snippet;
 } & HTMLAnchorAttributes;
-
-export {
-    Menu,
-    SubMenu,
-    MenuItem,
-}
+export { Menu, SubMenu, MenuItem, };

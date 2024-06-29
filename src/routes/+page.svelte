@@ -5,9 +5,10 @@
     import Checkbox from '$lib/form/checkbox/Checkbox.svelte';
     import { Input } from '$lib/form/input/index.js';
     import { Radio } from '$lib/form/radio/index.svelte.js';
+    import {UserRound, Lock, Bird, UserIcon, Settings, CreditCard, Home, List, Blocks} from 'lucide-svelte';
     import { Select, type SelectItem } from '$lib/form/select/index.svelte';
-    import { UserRound, Lock, Bird, UserIcon, Settings, CreditCard } from 'lucide-svelte';
     import { onMount } from 'svelte';
+    import { Menu, SubMenu, MenuItem } from '$lib/menu/index.js';
 
     let modalOpen = $state(false);
     let selectItems = [
@@ -139,6 +140,26 @@
                     <DropdownItem href="#" label="Subscription" icon={CreditCard} />
                 </Dropdown>
             {/if}
+        </section>
+
+        <section>
+            <h2>Menu</h2>
+            <div class="max-w-[320px]">
+                <Menu>
+                    <MenuItem href="/" icon={Home} label="Home" active />
+                    <MenuItem href="/" icon={List} label="Tasks" collapsable open>
+                        <SubMenu>
+                            <MenuItem href="/" label="Task #1" />
+                            <MenuItem href="/" label="Task #2" />
+                            <MenuItem href="/" label="Task #3" />
+                            <MenuItem href="/" label="Task #4" />
+                            <MenuItem href="/" label="Task #5" />
+                        </SubMenu>
+                    </MenuItem>
+                    <MenuItem href="/" icon={Blocks} label="APIs" />
+                    <MenuItem href="/" icon={CreditCard} label="Subscription" />
+                </Menu>
+            </div>
         </section>
     </div>
 </div>

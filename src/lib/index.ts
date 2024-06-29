@@ -6,6 +6,7 @@ import { Checkbox, type CheckboxProps } from '$lib/form/checkbox/index.svelte.js
 import { Input, type InputProps } from '$lib/form/input/index.js';
 import { Radio, type RadioProps } from '$lib/form/radio/index.svelte.js';
 import { Select, type SelectItem, type SelectProps } from '$lib/form/select/index.svelte.js';
+import { Menu, MenuItem, type MenuItemProps, type MenuProps } from '$lib/menu/index.js';
 
 export {
     Button,
@@ -25,4 +26,8 @@ export {
     Select,
     type SelectItem,
     type SelectProps,
+    Menu, 
+    MenuItem, 
+    type MenuItemProps, 
+    type MenuProps
 }
