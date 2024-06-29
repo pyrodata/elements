@@ -6,10 +6,12 @@
         outline = false,
         children,
         size = 'md',
+        reference = $bindable(),
         ...rest
     }: ButtonProps = $props();
 </script>
 <button
+    bind:this={reference}
     class={[
         `rounded-3xl font-bold`,
         `border border-1 outline-none`,
