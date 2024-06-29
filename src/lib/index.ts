@@ -7,6 +7,7 @@ import { Input, type InputProps } from '$lib/form/input/index.js';
 import { Radio, type RadioProps } from '$lib/form/radio/index.svelte.js';
 import { Select, type SelectItem, type SelectProps } from '$lib/form/select/index.svelte.js';
 import { Menu, MenuItem, type MenuItemProps, type MenuProps } from '$lib/menu/index.js';
+import { Layout, type LayoutProps } from '$lib/layout/index.svelte.js';
 
 export {
     Button,
@@ -29,5 +30,7 @@ export {
     Menu, 
     MenuItem, 
     type MenuItemProps, 
-    type MenuProps
+    type MenuProps,
+    Layout, 
+    type LayoutProps
 }
