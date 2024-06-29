@@ -1,5 +1,5 @@
 import type { HTMLInputAttributes } from "svelte/elements";
-import Radio from "./Checkbox.svelte";
+import Checkbox from "./Checkbox.svelte";
 
 export type CheckboxProps = {
     label: string;
@@ -9,5 +9,5 @@ export type CheckboxProps = {
 } & Omit<HTMLInputAttributes, 'size'>;
 
 export {
-    Radio
+    Checkbox
 }

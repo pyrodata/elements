@@ -1,2 +1,2 @@
-import Radio from "./Checkbox.svelte";
-export { Radio };
+import Checkbox from "./Checkbox.svelte";
+export { Checkbox };
