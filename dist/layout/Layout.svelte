@@ -7,7 +7,7 @@
 </script>
 <div class="flex h-screen overflow-hidden" class:container={boxed}>
     {#if sidebar}
-        <div class="min-w-[280px] max-w-[280px] flex-grow border-r border-gray-300">
+        <div class="min-w-[280px] max-w-[280px] flex-grow">
             {@render sidebar()}
         </div>
     {/if}
